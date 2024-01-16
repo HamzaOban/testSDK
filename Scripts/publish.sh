@@ -8,13 +8,13 @@ LOG_TAG="MSDK_BUILD_LOG"
 function publishSDKToGitHubRepo(){
 	echo "Publishing target ${1} to Github"
 
-    export GITHUB_TOKEN=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
+    export GITHUB_TOKEN=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
     export GITHUB_USER=HamzaOban
     git config user.name "HamzaOban"
     git config user.email "hamzaoban3@gmail.com"
 	# Github will be clone as https in build.sh. Using https every developer can clone github repo with its cridentials.
 	# But pushing on jenkins requires ssh otherwise it will ask password. To solve this change remote url to ssh.
-    git remote set-url origin https://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@github.com/HamzaOban/TestRelease.git
+    git remote set-url origin https://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@github.com/HamzaOban/TestRelease.git
     echo "remote set-url origin log"
 	git checkout main
     echo "checkout main log"

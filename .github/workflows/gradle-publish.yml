@@ -41,18 +41,20 @@ jobs:
           git config --global user.email "hamzaoban3@gmail.com"
           git config --global user.name "HamzaOban"
           git remote set-url origin https://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@github.com/HamzaOban/TestRelease.git
-	        git checkout main
+	        
+          git checkout main
           git status
           echo "status log"
-
-	        git branch -a
+	        
+          git branch -a
           echo "branch log"
-
-	        git pull
+	        
+          git pull
           echo "pull log"
-
-	        git add .
-	        git commit -m "Version ${SDK_VERSION} release."
-
+	        
+          git add .
+	        
+          git commit -m "Version ${SDK_VERSION} release."
 	        echo "Publishing target ${1} to Github completed"
-	        git push --set-upstream origin main
+	        
+          git push --set-upstream origin main
