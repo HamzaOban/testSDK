@@ -38,8 +38,8 @@ jobs:
           echo "======================================================================="
           echo " StepName:    Publishing new SDK version to GitHub                     "
           echo "======================================================================="
-          git config --global user.email "hamzaoban3@gmail.com"
-          git config --global user.name "HamzaOban"
+          git config user.email "hamzaoban3@gmail.com"
+          git config user.name "HamzaOban"
           git remote set-url origin https://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@github.com/HamzaOban/TestRelease.git
           git checkout main
           git status
@@ -47,6 +47,7 @@ jobs:
           git fetch origin
           git branch -a 
           echo "branch log"
+          git config pull.rebase false
           git pull origin main
           echo "pull log"
           git add .
