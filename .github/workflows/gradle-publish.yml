@@ -44,9 +44,10 @@ jobs:
           git checkout main
           git status
           echo "status log"
-          git branch -a
+          git fetch origin
+          git branch -a 
           echo "branch log"
-          git pull
+          git pull origin main
           echo "pull log"
           git add .
           git commit -m "Version ${SDK_VERSION} release."
