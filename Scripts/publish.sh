@@ -24,7 +24,8 @@ function publishSDKToGitHubRepo(){
 	git branch -a
     echo "branch log"
 
-	git pull
+	git fetch
+    git reset --hard origin/main
     echo "pull log"
 
 	git add .
