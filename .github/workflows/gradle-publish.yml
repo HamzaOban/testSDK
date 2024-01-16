@@ -36,5 +36,7 @@ jobs:
           echo "======================================================================="
           export GITHUB_TOKEN=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
           export GITHUB_USER=HamzaOban
+          git config user.name HamzaOban
+          git config user.email hamzaoban3@gmail.com
           chmod +x ./Scripts/publish.sh 
           ./Scripts/publish.sh 
