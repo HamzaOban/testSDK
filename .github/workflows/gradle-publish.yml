@@ -53,5 +53,5 @@ jobs:
           echo "add log"
           echo "commit log"
           git push --set-upstream origin main
-          echo "push logs"
+          echo "push logsa"
 
