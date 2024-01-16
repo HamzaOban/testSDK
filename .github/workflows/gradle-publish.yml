@@ -52,7 +52,7 @@ jobs:
           echo "pull log"
           git add .
           echo "add log"
-          git commit -m "Version ${SDK_VERSION} release."
+          git commit -m "Version release."
           echo "commit log"
           git push --set-upstream origin main
           echo "push log"
