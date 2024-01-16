@@ -45,9 +45,9 @@ jobs:
           git status
           echo "status log"
           git fetch origin
-          git branch -a 
+          git branch -a main
           echo "branch log"
-          git config pull.rebase false
+          git config pull.rebase true
           git pull origin main
           echo "pull log"
           git add .
