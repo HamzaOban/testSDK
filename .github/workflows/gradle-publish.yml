@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - feature/*
+      - /*
 
 jobs:
   build:
@@ -34,7 +34,7 @@ jobs:
           echo "======================================================================="
           echo " StepName:    Publishing new SDK version to GitHub                     "
           echo "======================================================================="
-          export GITHUB_TOKEN=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
-          export GITHUB_USER=rbbnbot
+          export GITHUB_TOKEN=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
+          export GITHUB_USER=HamzaOban
           chmod +x ./Scripts/publish.sh 
           ./Scripts/publish.sh 
