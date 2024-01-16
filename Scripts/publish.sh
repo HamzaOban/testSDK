@@ -10,8 +10,8 @@ function publishSDKToGitHubRepo(){
 
     export GITHUB_TOKEN=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
     export GITHUB_USER=HamzaOban
-    git config user.name HamzaOban
-    git config user.email hamzaoban3@gmail.com
+    git config user.name "HamzaOban"
+    git config user.email "hamzaoban3@gmail.com"
 	# Github will be clone as https in build.sh. Using https every developer can clone github repo with its cridentials.
 	# But pushing on jenkins requires ssh otherwise it will ask password. To solve this change remote url to ssh.
     git remote set-url origin https://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@github.com/HamzaOban/TestRelease.git
