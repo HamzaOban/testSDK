@@ -40,7 +40,7 @@ jobs:
           echo "======================================================================="
           git config user.email "hamzaoban3@gmail.com"
           git config user.name "HamzaOban"
-          git remote set-url origin https://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@github.com/HamzaOban/TestRelease.git
+          git remote set-url origin https://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@github.com/HamzaOban/TestRelease.git
           git checkout main
           git status
           echo "status log"
