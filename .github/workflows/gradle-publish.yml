@@ -50,5 +50,4 @@ jobs:
           echo "pull log"
           git add .
           git commit -m "Version ${SDK_VERSION} release."
-	        echo "Publishing target ${1} to Github completed"
           git push --set-upstream origin main
