@@ -38,7 +38,7 @@ jobs:
           echo "======================================================================="
           echo " StepName:    Publishing new SDK version to GitHub                     "
           echo "======================================================================="
-          export GITHUB_TOKEN=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
+          export GITHUB_TOKEN=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
           export GITHUB_USER=HamzaOban
           git config user.name HamzaOban
           git config user.email hamzaoban3@gmail.com
