@@ -20,7 +20,7 @@ jobs:
         with:
           ref: ${{ github.event.inputs.SDK_Codebase_Repository_Branch }}
           repository: 'HamzaOban/testSDK'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.EXTERNAL_REPOSITORY_PERSONAL_ACCESS_TOKEN }}
 
       - name: Set up Node.js version
         uses: actions/setup-node@v4
