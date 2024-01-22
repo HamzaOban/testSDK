@@ -32,6 +32,14 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '17'
+
+      - name: Checkout SDK Codebase Repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.SDK_Codebase_Repository_Branch }}
+          repository: 'HamzaOban/TestRelease'
+          token: ${{ secrets.EXTERNAL_REPOSITORY_PERSONAL_ACCESS_TOKEN }}
+
   
       - name: Deploy to external repository
         uses: cpina/github-action-push-to-another-repository@main
