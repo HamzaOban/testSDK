@@ -10,12 +10,12 @@ permissions:
   pages: write
 
 jobs:
-  build:
+  post:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
-      - name: Checkout SDK Codebase Repo
       - uses: actions/checkout@v4
+      - name: Checkout SDK Codebase Repo
         run: |
             mkdir output
             cp -r Scripts output
